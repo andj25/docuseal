@@ -6,14 +6,10 @@ services:
     buildCommand: "npx update-browserslist-db@latest && npm install && npm run build"
     startCommand: "npm run start"
     envVars:
-      - key: DATABASE_URL
-        sync: false
       - key: SECRET_KEY
-        generateValue: true
+        value: k781H9qLmN2vXpR758sT!wY5zA&bC3eF6gJ4hK2lM9nQ1rS7tU78952317
       - key: PDF_RENDER_MODE
         value: images
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 10000
-    healthCheckPath: /health
+    healthCheckPath: /
